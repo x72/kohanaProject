@@ -24,6 +24,15 @@ class Xyz_Controller extends Controller
     }
 
     /**
+     * after
+     */
+    public function after()
+    {
+        $controller = $this->request->controller();
+        $action = $this->request->action();
+    }
+
+    /**
      * 显示模板
      * @param string $tpl ,模板名
      *
